@@ -40,8 +40,8 @@ jobs:
 
       - name: Run unit tests
         env:
-          DATABASE_URL: sqlite:///:memory:
-          BEARER_TOKEN: ci-test-token
+          DATABASE_URL: "sqlite:///:memory:"
+          BEARER_TOKEN: "ci-test-token"
         run: >
           poetry run pytest tests/unit -v
           --cov=src
