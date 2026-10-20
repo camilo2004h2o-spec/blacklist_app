@@ -1,0 +1,12 @@
+# Fuera de la imagen / del contexto de build (el Dockerfile solo copia pyproject.toml y src/)
+.git
+.env
+.env.*
+k8s/
+tests/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
